@@ -11,7 +11,10 @@ function Home() {
   }, [])
 
   return (
-    <div>{display}</div>
+    <>
+      <div>{display}</div>
+      <div>{process.env.NEXT_PUBLIC_VERCEL_ENV}</div>
+    </>
   );
 }
 
