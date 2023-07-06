@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 function App({ Component, pageProps }) {
   return (
     <>
