@@ -27,6 +27,13 @@ function Home() {
       </Script>
       <div>{display}</div>
       <div>{process.env.NODE_ENV}</div>
+      <button onClick={() => {
+        window.gtag("event", 'home_button_click', {
+          event_category: 'click',
+          event_label: 'button click',
+          value: 'test',
+        });
+      }}>Click Me!</button>
     </>
   );
 }
