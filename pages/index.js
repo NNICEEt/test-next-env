@@ -7,7 +7,7 @@ function Home() {
   const [display, setDisplay] = useState("");
 
   useEffect(() => {
-    gtag('config', 'G-CQEX0HL2X3', {
+    gtag('config', 'G-6ECZTCMSXD', {
       'page_title' : 'homepage',
       'page_path': '/home'
     });

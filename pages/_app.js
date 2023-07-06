@@ -5,14 +5,14 @@ function App({ Component, pageProps }) {
     <>
       <Script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=G-CQEX0HL2X3`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-6ECZTCMSXD`}
       />
       <Script>
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-CQEX0HL2X3');
+          gtag('config', 'G-6ECZTCMSXD');
         `}
       </Script>
       <Component {...pageProps} />
