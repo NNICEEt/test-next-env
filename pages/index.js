@@ -13,18 +13,6 @@ function Home() {
 
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-CQEX0HL2X3`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-CQEX0HL2X3');
-        `}
-      </Script>
       <div>{display}</div>
       <div>{process.env.NODE_ENV}</div>
       <button onClick={() => {
