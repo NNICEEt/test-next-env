@@ -8,6 +8,10 @@ function Home() {
   const [display, setDisplay] = useState("");
 
   useEffect(() => {
+    gtag('config', 'G-CQEX0HL2X3', {
+      'page_title' : 'homepage',
+      'page_path': '/home'
+    });
     setDisplay(process.env.NEXT_PUBLIC_DISPLAY_ENV);
   }, []);
 
