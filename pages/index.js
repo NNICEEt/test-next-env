@@ -13,7 +13,7 @@ function Home() {
         onClick={() => {
           TagManager.dataLayer({
             dataLayer: {
-              event: "click",
+              event: "click12345",
               category: "tracking_event_1",
               action: "click",
               label: "click_event_test_1",
