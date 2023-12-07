@@ -1,23 +1,11 @@
-import Script from "next/script";
+import { useEffect } from "react";
 
 function App({ Component, pageProps }) {
-  return (
-    <>
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=G-6ECZTCMSXD`}
-      />
-      <Script>
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-6ECZTCMSXD');
-        `}
-      </Script>
-      <Component {...pageProps} />
-    </>
-  );
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-MTWP4X29" });
+  });
+
+  return <Component {...pageProps} />;
 }
 
 export default App;
