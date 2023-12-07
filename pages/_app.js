@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import TagManager from "react-gtm-module";
 
 function App({ Component, pageProps }) {
   useEffect(() => {
