@@ -21,6 +21,15 @@ function Home() {
               },
             },
           });
+
+          TagManager.dataLayer({
+            event: "click",
+            eventProps: {
+              category: "tracking_event_2",
+              action: "click",
+              label: "click_event_test_2",
+            },
+          });
         }}
       >
         Click Me!
