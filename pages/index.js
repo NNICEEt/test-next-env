@@ -14,20 +14,9 @@ function Home() {
           TagManager.dataLayer({
             dataLayer: {
               event: "nice_click",
-              eventProps: {
-                category: "tracking_event_1",
-                action: "click",
-                label: "click_event_test_1",
-              },
-            },
-          });
-
-          TagManager.dataLayer({
-            event: "nice_click",
-            eventProps: {
-              category: "tracking_event_2",
-              action: "click",
-              label: "click_event_test_2",
+              event_category: "tracking_event_1",
+              event_action: "click",
+              event_label: "click_event_test_1",
             },
           });
         }}
