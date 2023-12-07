@@ -14,14 +14,10 @@ function Home() {
           TagManager.dataLayer({
             dataLayer: {
               event: "nice_click",
-              eventProps: {
-                event_category: "tracking_event_1",
-                event_action: "click",
-                event_label: "click_event_test_1",
-              },
-              event_category: "tracking_event_1",
-              event_action: "click",
-              event_label: "click_event_test_1",
+              category: "tracking_event_1",
+              action: "click",
+              label: "click_event_test_1",
+              values: {},
             },
           });
         }}
